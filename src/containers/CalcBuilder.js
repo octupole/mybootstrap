@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Aux from '../components/Aux'
-import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label, FormText } from 'reactstrap';
-import Auxiliary from './Auxiliary';
+import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label} from 'reactstrap';
+
+import PrintLine from '../components/Layouts/PrintLine';
+
 
 const CalcBuilder = (props) => {
 
@@ -19,13 +21,13 @@ const CalcBuilder = (props) => {
       flour: 100,
       water: 60,
       levain: 20,
-      salt: 3,
+      salt: 1.8,
       total: 0,
     });
   const [hydration, setHydration] = useState(0);
   const [coef, setCoef] = useState(0);
 
-  
+
   const peChangedHandler = (event,id) => {
     let myPe = { ...Pe };
     let myIn = { ...In };
@@ -70,65 +72,40 @@ const CalcBuilder = (props) => {
     setHydration(myHydration);
     setCoef(coef);
   }
+  
   useEffect( ()=> initializeData(),[]);
   return (
     <Aux>
-      <Container> <h1> Hello There </h1></Container>
+    <Container fluid>
       <Form>
         <FormGroup>
           <Row>
-          <Label sm={2}>Farina</Label>
-          <Col sm={2}>
-            <Input type='number' value={Pe.flour} disabled />            
-          </Col>
-          <Col sm={2}>
-            <Input type='number' value={In.flour.toFixed(1)}/>       
-            </Col>
+            <Col xs="2" lg={3}/>
+          <Label xs={3} lg={1}><b> <center> Percentuale</center></b></Label>
+          <Col xs="2" lg={1}/>
+          <Label xs={3} lg={1}><b><center>Peso</center></b></Label>
         </Row>
-          <Row>
-          <Label sm={2}>Lievito Madre</Label>
-            <Col sm={2}>
-            <Input type='number' value={Pe.levain}  onChange={(evt)=>peChangedHandler(evt,'levain')} />       
-            </Col>
-            <Col sm={2}>
-            <Input type='number' value={In.levain.toFixed(1)}/>       
-            </Col>
-          </Row>
-          <Row>
-          <Label sm={2}>Acqua</Label>
-            <Col sm={2}>
-            <Input type='number' value={Pe.water}  onChange={(evt)=>peChangedHandler(evt,'water')} />       
-            </Col>
-            <Col sm={2}>
-            <Input type='number' value={In.water.toFixed(1)}/>       
-            </Col>
-          </Row>
-          <Row>
-          <Label sm={2}>Sale</Label>
-            <Col sm={2}>
-            <Input type='number' value={Pe.salt}  onChange={(evt)=>peChangedHandler(evt,'salt')} />       
-            </Col>
-            <Col sm={2}>
-            <Input type='number' value={In.salt.toFixed(1)}/>       
-            </Col>
-          </Row>
-          <Row>
-          <Label sm={2}>Totale</Label>
-            <Col sm={2}>
-            <Input type='number' value={Pe.total.toFixed(1)} disabled />       
-            </Col>
-            <Col sm={2}>
-            <Input type='number' value={In.total.toFixed(0)} onChange={(evt)=>inChangedHandler(evt)} />       
-            </Col>
-          </Row>
-          <Row>
-          <Label sm={2}>Hydration</Label>
-            <Col sm={2}>
-            <Input type='number' value={hydration.toFixed(1)} />       
-            </Col>
-          </Row>
+        <PrintLine ingredient='Farine' 
+          pe={{value: Pe.flour, readonly: true}} 
+          in={{value: In.flour, readonly: true}}/>
+        <PrintLine ingredient='Lievito Madre' 
+          pe={{value: Pe.levain, readonly: false, onchange: (evt)=>peChangedHandler(evt,'levain')}} 
+          in={{value: In.levain, readonly: true}}/>
+        <PrintLine ingredient='Acqua' 
+          pe={{value: Pe.water, readonly: false, onchange: (evt)=>peChangedHandler(evt,'water')}} 
+          in={{value: In.water, readonly: true}}/>
+        <PrintLine ingredient='Sale' 
+          pe={{value: Pe.salt, readonly: false, onchange: (evt)=>peChangedHandler(evt,'salt')}} 
+          in={{value: In.salt, readonly: true}}/>
+        <PrintLine ingredient='Totale' 
+          pe={{value: Pe.total, readonly: true }} 
+          in={{value: In.total, readonly: false, onchange: (evt)=>inChangedHandler(evt)}}/>
+        <PrintLine ingredient='Idratazione' 
+          pe={{value: hydration.toFixed(1), readonly: true }}/>
+          
         </FormGroup>
       </Form>
+  </Container>      
     </Aux>
   )
 }

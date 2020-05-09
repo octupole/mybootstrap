@@ -4,6 +4,7 @@ import './App.css';
 import Layout from '../components/Layouts/Layouts'
 import Aux from '../components/Aux';
 import CalcBuilder from './CalcBuilder';
+import Example from './Example';
 
 
 //import Example from '../components/example';

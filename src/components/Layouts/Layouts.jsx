@@ -3,6 +3,7 @@ import bgimage from '../../assets/images/theperfectloaf.jpg';
 import { Jumbotron, Container } from 'reactstrap';
 import Aux from '../Aux';
 const styleImg={
+  fontFamily: "'Open Sans', sansSerif",
     position: 'relative',
     left: 0,
     top: '0px',
