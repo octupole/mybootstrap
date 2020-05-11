@@ -4,8 +4,20 @@ import './App.css';
 import Layout from '../components/Layouts/Layouts'
 import Aux from '../components/Aux';
 import CalcBuilder from './CalcBuilder';
-import Example from './Example';
+import Recepies from '../components/recepies';
 
+import {
+  Switch,
+  Route,
+  NavLink,
+  Link
+} from "react-router-dom";
+
+import {
+  Navbar,
+  Nav,
+  NavItem,
+} from 'reactstrap';
 
 //import Example from '../components/example';
 
@@ -13,7 +25,24 @@ const App= ()=> {
   return (
     <Aux>
       <Layout>
-        <CalcBuilder/>
+      <Navbar color="light" light expand>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink activeStyle={{color: '#fa923f',textDecoration: 'underline'}} 
+              style={{paddingRight: '30px'}} to="/" exact >Calcolatore 
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink activeStyle={{color: '#fa923f',textDecoration: 'underline'}} 
+              style={{paddingRight: '30px'}}  to="/Recepies" exact>Ricette
+              </NavLink>
+            </NavItem>
+            </Nav>
+            </Navbar>
+            <Switch>
+              <Route path="/Recepies" exact component={Recepies} />
+              <Route path="/" strict exact component={CalcBuilder} />
+            </Switch>
       </Layout>
     </Aux>
   );

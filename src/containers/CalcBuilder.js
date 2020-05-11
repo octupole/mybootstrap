@@ -53,7 +53,7 @@ const CalcBuilder = (props) => {
     myIn.total=parseFloat(event.target.value);
     let coef = myIn.total / myPe.total;
     for (let it in myPe) {
-      myIn[it] = myPe[it] * coef;
+      myIn[it] = it==='total'?myIn.total:myPe[it] * coef;
     }
     setIngredients(myIn);
   }
@@ -101,7 +101,7 @@ const CalcBuilder = (props) => {
           pe={{value: Pe.total, readonly: true }} 
           in={{value: In.total, readonly: false, onchange: (evt)=>inChangedHandler(evt)}}/>
         <PrintLine ingredient='Idratazione' 
-          pe={{value: hydration.toFixed(1), readonly: true }}/>
+          pe={{value: hydration, readonly: true }}/>
           
         </FormGroup>
       </Form>
