@@ -5,7 +5,7 @@ import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label} from 'reac
 import PrintLine from '../components/Layouts/PrintLine';
 
 
-const CalcBuilder = (props) => {
+const CalcBuilder = () => {
 
   const [In, setIngredients] = useState(
     {
@@ -25,7 +25,7 @@ const CalcBuilder = (props) => {
       total: 0,
     });
   const [hydration, setHydration] = useState(0);
-  const [coef, setCoef] = useState(0);
+ 
 
 
   const peChangedHandler = (event,id) => {
@@ -44,7 +44,6 @@ const CalcBuilder = (props) => {
     setPercent(myPe);
     setIngredients(myIn);
     setHydration(myHydration);
-    setCoef(coef);
 
   }
   const inChangedHandler = (event) => {
@@ -70,7 +69,6 @@ const CalcBuilder = (props) => {
     setPercent(myPe);
     setIngredients(myIn);
     setHydration(myHydration);
-    setCoef(coef);
   }
   
   useEffect( ()=> initializeData(),[]);
