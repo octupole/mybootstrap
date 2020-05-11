@@ -1,26 +1,153 @@
 import React from 'react';
+import './recepies.css'
+
 const mystyle={textAlign: 'left'};
 
-
 const recepies=(props) =>(
-  <div>
-<h4 className="text-left"><b>Ricetta per pane in 36 ore</b></h4>
 
-<p style={mystyle}>Preparazione de pane:</p>
+      <div>
+        <h1>
+          <center>Ricette </center>
+		  &nbsp;
+        </h1>
+        <table style={{width: '400px', height: '141px'}} className="mine" align="center"><tbody><tr><td className="mine">
+                <table style={{width: '400px', height: '141px'}} id="mytable">
+				
+<caption><center><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Idratazione 75 %</span></center></caption>	
+                  <tbody><tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Ingrediente</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Peso</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Percentuale</span></td>
+                    </tr>
+                    <tr style={{textAlign: 'right', backgroundColor: 'white'}}>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Farina</span></td>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>508
+                          g</span></td>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>100
+                          %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Acqua</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>381
+                          g</span></td>
+                      <td style={{height: '19px'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>75
+                          %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Lievito</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>102
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>20 %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Sale</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>9
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>1.8 %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Totale</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>1000
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>197 %</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td><td className="mine">
+                <table style={{width: '400px', height: '141px'}} id="mytable">
+                  <tbody><tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Ingrediente</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Peso</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Percentuale</span></td>
+                    </tr>
+                    <tr style={{textAlign: 'right', backgroundColor: 'white'}}>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Farina</span></td>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>508
+                          g</span></td>
+                      <td style={{textAlign: 'left', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>100
+                          %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Acqua</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>381
+                          g</span></td>
+                      <td style={{height: '19px'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>75
+                          %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Lievito</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>102
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>20 %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Sale</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>9
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>1.8 %</span></td>
+                    </tr>
+                    <tr>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Totale</span></td>
+                      <td style={{textAlign: 'justify', backgroundColor: 'white'}}><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>1000
+                          g</span></td>
+                      <td><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>197 %</span></td>
+                    </tr>
+                  </tbody><caption><center><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Idratazione 68 % </span></center></caption>
+                </table>
+              </td></tr></tbody></table>
 
-<ul>
-	<li style={mystyle}><strong>Preparazione iniziatore&nbsp;</strong>-Si inizia la mattina del primo giorno prelevando il lievito madre dopo averlo rinnovato il giorno prima. Si assume che il lievito madre sia forte da raddoppiare dopo tre ore dal rinnovo. I grammi da prelevare si trovano nella seconda casella a destra. A questi si aggiunge una miscela al 50/50 (in peso) di farina+acqua il cui peso totale si trova nella terza casella a destra. Il peso totale dell&#39;<strong><span style={{textDecoration: 'underline'}} >iniziatore</span></strong> (lievito madre ed miscela farina/acqua 50/50 in peso) si trova nella quarta casella a destra. Dopo aver ben mescolato si lascia l&#39;iniziatore per 5 ore a fermentare, fino a che la&nbsp;miscela avr&agrave; raddoppiato in volume.</li>
-	<li style={mystyle}><strong>Primo impasto</strong> - Dopo questo primo passaggio,&nbsp;si mette la farina (prima casella a destra) con l&#39;iniziatore nell&#39;impastatrice e ci&nbsp;si aggiunge l&#39;acqua (sesta casella). Si impasta per qualche minuto (2-3&#39;) fino a d ottenere l&#39;omogeneizzazione della pasta, poi si lascia riposare per 20&#39;.</li>
-	<li style={mystyle}><strong>Impasto finale</strong> - Dopo questo lasso di tempo, si aggiunge il sale e si lancia l&#39;impastatrice. In genere, dopo 10&#39; alla velocit&agrave; pi&ugrave; bassa, si pu&ograve; aumentare la velocit&agrave;, se si vuole, e continuare ancora per 5-10 minuti. In genere ci si ferma quando l&#39;impasto &egrave; sufficientemente elastico: se si prende un pezzo dell&#39;impasto tra le dita delle mani e si tira non si strappa subito. Questo significa che il glutine dell&#39;impasto ha preso bene. Idratazioni pi&ugrave; alte, ottenute se per esempio si aumenta la percentuale dell&#39;acqua da 50 a 60, necessitano un&#39;impastatura pi&ugrave; lunga a pi&ugrave; alta velocit&agrave;.</li>
-	<li style={mystyle}><strong>Fermentazione in Frigo</strong>&nbsp;- Dopo questa operazione, si lascia l&#39;impasto nel contenitore dell&#39;impastatrice e lo si lascia a lievitare&nbsp;per 1 ora a temperatura ambiente. A questo punto si passa l&#39;impasto in un recipente adatto ad essere messo in frigorifero e lo si chiudi sia con un coperchio ermetico sia con un film in plastica. &Egrave; importante che l&#39;impasto non si secchi mentre sta in frigorifereo. L&#39;impasto rester&agrave; al fresco (parte del frigo meno fredda) per tutta la notte.</li>
-	<li style={mystyle}><strong>Formatura</strong> - Al mattino del secondo giorno si toglie l&#39;impasto dal frigo e si forma il pane (uno o pi&ugrave; panetti secondo le dosi) dandogli la forma che si vuole, assicurandosi che il panetto <a href="https://www.youtube.com/watch?v=95r2XSYzahA" target="_blank">sia ben teso</a>&nbsp;dopo piegatura dell&#39;impasto.&nbsp;Finalmente, si mette il pane in un recipiente&nbsp;adatto&nbsp;alla lievitazione finale, ci sono in commercio&nbsp;dei <a href="https://www.amazon.it/Amazy-Cestino-lievitazione-libretto-consigli/dp/B01IDELMPG/ref=sr_1_12?dchild=1&amp;keywords=cestino%2Blievitazione%2Bpane&amp;qid=1587397528&amp;sr=8-12&amp;th=1" target="_blank">cestini di forme varie</a> per questo scopo. In ogni modo, mettere la parte senza pieghe all&#39;interno del cestino o recipiente.</li>
-	<li style={mystyle}><strong>Lievitazione finale</strong> - Si lascia il pane nel cestino ricoperto da un panno per 3 ore circa fino a che l&#39;impasto &egrave; aumentato di volume di una volta e mezza. Per questa fase si pu&ograve; mettere il cestino col pane&nbsp;in&nbsp;forno accendendo la luce interna per avere una temperature vicina ai 30 gradi.</li>
-	<li style={mystyle}><strong>Cottura del pane</strong> - Quando si arriva a mezzora dalla&nbsp;fine della lievitazione si accende il forno mettendo il termostato a 240 C. Su una paletta per forno preventivamente spruzzata con della farina di semola si rovescia il cestino dell&#39;impasto. Prima di informare il pane &egrave; bene fare degli intagli sulla superficie del pane &agrave; X oppure a # con una lama affilata e con colpo netto. Questo evita la fuoriuscita disordinata del vapore d&#39;acqua dal pane durante la cottura. Dopo 5-10&#39; a 240 C si passa il termostato a 190 C e si lascia cuocere per 40&#39;.&nbsp;</li>
-	<li style={mystyle}><strong>Nota Bene&nbsp;</strong>- Il calculatore usa una percentuale d&#39;acqua predefinita del 50 %. Questa si pu&ograve; aumentare, ma bisogna tener presente che l&#39;impasto e la formatura diventano pi&ugrave; difficili se si&nbsp;aumenta a pi&ugrave; del 60 %.</li>
-</ul>
 &nbsp;
+<ul>
+	<li style={mystyle}><strong>Preparazione del lievito madre</strong> -Si inizia la mattina del primo 
+	giorno prelevando il lievito madre dopo averlo rinnovato il giorno prima. Si assume che il 
+	lievito madre sia forte da raddoppiare dopo tre ore dal rinnovo. I grammi da prelevare sono 
+	per molte ricette il 20 % in peso del peso della farina.</li>
+	<li style={mystyle}><strong>Impasto 1</strong>-Si mescolano prima la farina e l'acqua 
+	con l'impastatrice a velocità 1 per 3-4 minuti fino a che si abbia una miscela omogenea. 
+	Dopodiché si aspettano 20 minuti, lasciando l'impasto nel recipiente dell'impastatrice.</li>
+	<li style={mystyle}><strong>Impasto 2 </strong>-Dopo i 20 minuti, si aggiunge il lievito madre 
+	precedentemente preparato e si impasta per 5 minuti a velocità 1. Poi si aggiunge il lievito madre 
+	e si continua ad impastare per 10 minuti questa volta a velocità 2. A questo punto l'impasto dovrebbe 
+	essere liscio ed ed elastico.</li>
+	<li style={mystyle}><strong>Prima lievitazione </strong>- A questo punto si mette tutto in un recipente 
+	precedentemente col fondo infarinato. L'impasto sarà piuttosto colloso e per trasferirlo la cosa più 
+	semplice è di inumidirsi le mani o la spatola. Dopo circa 1 ora e mezza si fanno tre pieghe all'impasto
+	 nel recipiente dove sta fermentando oppure sul tavolo precedentemente infarinato. Due pieghe une in 
+	 direzione opposta dell'altra e la terza a 90 gradi nell'altra direzione. Si continua la lievitazione 
+	 per 3 ore dopo la piega. Alla fine della lievitazione l'impasto dovrà essersi raddoppiato. Ovviamente 
+	 il tempo esatto dipende dalla temperatura ambiente, d'estate sarà tutto più corto, mentre in inverno i 
+	 tempi si allungheranno.</li>
+	<li style={mystyle}><strong>Preparazione del pane</strong> - Dopo che la prima lievitazione è 
+	terminata si forma la pagnotta o il filone sul tavolo di lavoro. Per questi ci sono molti video 
+	disponibili su youtube. In generale, si eviterà di lavorare troppo sull'impasto, appiattendolo 
+	gentilmente per sgonfiarlo un po' dei gas della fermentazione, ma senza eccedere visto che la 
+	lievitazione col lievito madre è più debole di quella ottenibile col lievito di birra. Dopo aver 
+	preparatp il pane lo si mette nel cestino di lievitazione od altro recipiente adatto precedentemente 
+	infarinato. Fare attenzione a mettere la saldatura dell'impasto (formata durante la preparazioen d
+	ella pagnotta o del filone) in alto perché questa è la parte della pagnotta a mettere sulla paletta 
+	per l'infornata.</li>
+	<li style={mystyle}><strong>Seconda Lievitazione </strong>- Il pane preparato nel cestino di 
+	lievitazione viene poi messo in frigo per la notte, nella parte meno fredda dello stesso.</li>
+	<li style={mystyle}><strong>Il Forno </strong>- Al mattino del giorno successivo, si toglie il 
+	cestino dal frigo e si accende il forno con la pietra refrattaria od il piano di ghisa sulla 
+	griglia. La temperatura del forno è di 240 gradi in questa prima fase. Il forno va tenuto a questa 
+	temperatura per 20 minuti dopo che la temperatura è raggiunta, per dar modo alla pietra refrattaria 
+	o alla ghisa di arrivare alla temperatura voluta.</li>
+	<li style={mystyle}><strong>Cottura</strong> - Quando il forno è pronto si rovescia il cestino su 
+	una pal precedentemente infarinata di farina di semola di grano duro. Prima di infornare, è bene 
+	fare dei tagli sulla superficie del pane con una lametta o coltello molto affilato. Dopo aver 
+	messo il pane in forno, si abbassa la temperatura a 190 C e si lascia cuocere per 40-45 minuti. 
+	Se si vuole una crosta più scura si può lasciare il forno a 240 per 4-5 minuti e poi a 190 per il 
+	resto del tempo.</li>
+	<li style={mystyle}><strong>Farina </strong>- Evitare di utilizzare una farina 00 per il pane, 
+	piuttosto scegliere una farina 1 o 2, aggiungendo 100-150 g di farina Manitoba o altra farina 
+	forte sui 508 g della ricetta.</li>
+	<li style={mystyle}><strong>Osservazione</strong> - La preparazione del pane è diversa dalla 
+	preparazione di una pizza. In generale, l'idratazione dell'impasto è più alta e, dunque, l'impasto 
+	è molto più appiccicoso e difficile da maneggiare.</li>
+	
+</ul>
 
-      
   </div>  
 );
 

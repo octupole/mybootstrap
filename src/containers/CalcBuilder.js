@@ -4,7 +4,6 @@ import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label} from 'reac
 
 import PrintLine from '../components/Layouts/PrintLine';
 
-
 const CalcBuilder = () => {
 
   const [In, setIngredients] = useState(
@@ -26,8 +25,6 @@ const CalcBuilder = () => {
     });
   const [hydration, setHydration] = useState(0);
  
-
-
   const peChangedHandler = (event,id) => {
     let myPe = { ...Pe };
     let myIn = { ...In };

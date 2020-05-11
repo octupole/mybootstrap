@@ -1,0 +1,19 @@
+td{
+  border: 1px solid black;
+  border-collapse: collapse;
+ border-spacing: 10px;  
+}
+#mytable{
+  border: 1px solid black;
+  border-collapse: collapse;
+ border-spacing: 10px;  
+}
+tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+.mine{
+  border: 0px solid black;
+  border-collapse: collapse;
+}
