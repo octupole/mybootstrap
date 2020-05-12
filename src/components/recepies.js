@@ -1,7 +1,12 @@
 import React from 'react';
-import './recepies.css'
+import './recepies.css';
+import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label} from 'reactstrap';
 
-const mystyle={textAlign: 'left'};
+const mystyle={
+	textAlign: 'left',
+	fontFamily: 'Open Sans, sans-serif',
+	fontSize: '16px'
+};
 
 const recepies=(props) =>(
 
@@ -10,7 +15,8 @@ const recepies=(props) =>(
           <center>Ricette </center>
 		  &nbsp;
         </h1>
-        <table style={{width: '400px', height: '141px'}} className="mine" align="center"><tbody><tr><td className="mine">
+        <table style={{width: '400px', height: '141px'}} id="mine" align="center"><tbody><tr>
+			<td >
                 <table style={{width: '400px', height: '141px'}} id="mytable">
 				
 <caption><center><span style={{fontFamily: 'Helvetica,Arial,sans-serif'}}>Idratazione 75 %</span></center></caption>	
@@ -98,15 +104,17 @@ const recepies=(props) =>(
 
 &nbsp;
 <ul>
-	<li style={mystyle}><strong>Preparazione del lievito madre</strong> -Si inizia la mattina del primo 
+	<li style={mystyle}><strong>Lievito madre</strong> -Si inizia la mattina del primo 
 	giorno prelevando il lievito madre dopo averlo rinnovato il giorno prima. Si assume che il 
 	lievito madre sia forte da raddoppiare dopo tre ore dal rinnovo. I grammi da prelevare sono 
-	per molte ricette il 20 % in peso del peso della farina.</li>
-	<li style={mystyle}><strong>Impasto 1</strong>-Si mescolano prima la farina e l'acqua 
+	per molte ricette il 20 % in peso del peso della farina. Dopo averlo prelevato si effettua un 
+	rinfresco abituale con 50 % di farina e 50 % d'acqua.</li>
+	<li style={mystyle}><strong>Impasto 1</strong>- Dopo che il lievito ha almeno raddoppiato di volume, 
+	quindi 3-4 ore dal rinfresco, si mescolano prima la farina e l'acqua 
 	con l'impastatrice a velocità 1 per 3-4 minuti fino a che si abbia una miscela omogenea. 
 	Dopodiché si aspettano 20 minuti, lasciando l'impasto nel recipiente dell'impastatrice.</li>
-	<li style={mystyle}><strong>Impasto 2 </strong>-Dopo i 20 minuti, si aggiunge il lievito madre 
-	precedentemente preparato e si impasta per 5 minuti a velocità 1. Poi si aggiunge il lievito madre 
+	<li style={mystyle}><strong>Impasto 2 </strong>-Dopo i 20 minuti, si aggiungono il lievito madre 
+	precedentemente preparato, il sale e si impasta per 5 minuti a velocità 1. Poi si aggiunge il lievito madre 
 	e si continua ad impastare per 10 minuti questa volta a velocità 2. A questo punto l'impasto dovrebbe 
 	essere liscio ed ed elastico.</li>
 	<li style={mystyle}><strong>Prima lievitazione </strong>- A questo punto si mette tutto in un recipente 
@@ -130,13 +138,15 @@ const recepies=(props) =>(
 	lievitazione viene poi messo in frigo per la notte, nella parte meno fredda dello stesso.</li>
 	<li style={mystyle}><strong>Il Forno </strong>- Al mattino del giorno successivo, si toglie il 
 	cestino dal frigo e si accende il forno con la pietra refrattaria od il piano di ghisa sulla 
-	griglia. La temperatura del forno è di 240 gradi in questa prima fase. Il forno va tenuto a questa 
+	griglia. Aggiungere dell'acqua (1-2 litri) nel vassoi nella parte inferiore del forno, questo è molto 
+	importante per la riuscita del pane. 
+	La temperatura del forno è di 240 gradi in questa prima fase. Il forno va tenuto a questa 
 	temperatura per 20 minuti dopo che la temperatura è raggiunta, per dar modo alla pietra refrattaria 
 	o alla ghisa di arrivare alla temperatura voluta.</li>
 	<li style={mystyle}><strong>Cottura</strong> - Quando il forno è pronto si rovescia il cestino su 
-	una pal precedentemente infarinata di farina di semola di grano duro. Prima di infornare, è bene 
+	una paletta precedentemente infarinata di farina di semola di grano duro. Prima di infornare, è bene 
 	fare dei tagli sulla superficie del pane con una lametta o coltello molto affilato. Dopo aver 
-	messo il pane in forno, si abbassa la temperatura a 190 C e si lascia cuocere per 40-45 minuti. 
+	messo il pane in forno, si abbassa la temperatura a 190 e si lascia cuocere per 40-45 minuti. 
 	Se si vuole una crosta più scura si può lasciare il forno a 240 per 4-5 minuti e poi a 190 per il 
 	resto del tempo.</li>
 	<li style={mystyle}><strong>Farina </strong>- Evitare di utilizzare una farina 00 per il pane, 
@@ -147,8 +157,65 @@ const recepies=(props) =>(
 	è molto più appiccicoso e difficile da maneggiare.</li>
 	
 </ul>
+        <div className="container mt-5 mb-5">
+          <div className="row">
+            <div className="col-md-6 offset-md-3">
+              <h4>Le Tappe della Panificazione</h4>
+              <ul className="timeline">
+                <li>
+                  <div target="_blank" rel="noopener noreferrer">
+					  Preparazione Lievito</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>8:00</b></p>
+                  <p>Tappe: <strong>Lievito madre</strong></p>
+                </li>
+                <li>
+                  <div>Impasto</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>11:00</b></p>
+                  <p>Tappe: <strong>Impasto 1 + Impasto 2</strong></p>
+                </li>
+                <li>
+                  <div>Lievitazione Massa</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>11:30</b></p>
+                  <p>Tappe: <strong>Prima Lievitazione</strong></p>
+                </li>
+                <li>
+                  <div>Piega</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>13:00</b></p>
+                  <p>Tappe: <strong>Prima Lievitazione</strong></p>
+                </li>
+                <li>
+                  <div>Preparare il Pane</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>16:00</b></p>
+                  <p>Tappe: <strong>Preparazione del Pane</strong></p>
+                </li>
+                <li>
+                  <div>In Frigo</div>
+                  <p className="float-right">Giorno 1 &nbsp;  &nbsp; <b>16:20</b></p>
+                  <p>Tappe: <strong>Seconda lievitazione</strong></p>
+                </li>
+                <li>
+                  <div>In Forno</div>
+                  <p className="float-right">Giorno 2 &nbsp;  &nbsp; <b>8:00</b></p>
+                  <p>Tappe: <strong>Il Forno + Cottura</strong></p>
+                </li>
+                <li>
+                  <div>Fuori dal Forno</div>
+                  <p className="float-right">Giorno 2 &nbsp;  &nbsp; <b>9:00</b></p>
+                  <p>Il pane è finalmente pronto</p>
+                </li>
+                <li>
+                  <div></div>
+                  <p></p>
+                  <p>&nbsp;</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+ 
 
-  </div>  
+</div>
 );
 
 export default recepies;

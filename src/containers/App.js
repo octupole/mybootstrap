@@ -29,19 +29,19 @@ const App= ()=> {
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink activeStyle={{color: '#fa923f',textDecoration: 'underline'}} 
-              style={{paddingRight: '30px'}} to="/" exact >Calcolatore 
+              style={{paddingRight: '30px',fontSize: '24px'}} to="/" exact >Ricette
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink activeStyle={{color: '#fa923f',textDecoration: 'underline'}} 
-              style={{paddingRight: '30px'}}  to="/Recepies" exact>Ricette
+              style={{paddingRight: '30px',fontSize: '24px'}}  to="/Calculator" exact>Calcolatore
               </NavLink>
             </NavItem>
             </Nav>
             </Navbar>
             <Switch>
-              <Route path="/Recepies" exact component={Recepies} />
-              <Route path="/" strict exact component={CalcBuilder} />
+              <Route path="/Calculator" strict exact component={CalcBuilder} />
+              <Route path="/" exact component={Recepies} />
             </Switch>
       </Layout>
     </Aux>
