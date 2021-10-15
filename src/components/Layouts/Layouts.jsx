@@ -1,7 +1,7 @@
 import React from 'react';
 import bgimage from '../../assets/images/theperfectloaf.jpg';
 import { Jumbotron, Container } from 'reactstrap';
-import Aux from '../Aux';
+import Aux0 from '../Aux0';
 
 
 const styleImg={
@@ -19,7 +19,7 @@ const styleImg={
     textShadow: '10px 10px 10px white'
   }
 const layout = ( props ) => (
-    <Aux>
+    <Aux0>
     <Jumbotron style={styleImg}>
       <Container>
     <h1 className="text-center"><b>Lievito Madre</b></h1><br/>
@@ -28,7 +28,7 @@ const layout = ( props ) => (
     </Jumbotron>
     <Container>{props.children}</Container>
             
-    </Aux>
+    </Aux0>
 );
 
 export default layout;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Layout from '../components/Layouts/Layouts'
-import Aux from '../components/Aux';
+import Aux0 from '../components/Aux0';
 import CalcBuilder from './CalcBuilder';
 import Recepies from '../components/recepies';
 
@@ -23,7 +23,7 @@ import {
 
 const App= ()=> {
   return (
-    <Aux>
+    <Aux0>
       <Layout>
       <Navbar color="light" light expand>
           <Nav className="mr-auto" navbar>
@@ -44,7 +44,7 @@ const App= ()=> {
               <Route path="/" exact component={Recepies} />
             </Switch>
       </Layout>
-    </Aux>
+    </Aux0>
   );
 }
 /*
@@ -59,11 +59,11 @@ function App() {
 
   return (
 
-      <Aux>
+      <Aux0>
       <Layout>  
         <DoIt/>
       </Layout>
-      </Aux>
+      </Aux0>
 
 
 

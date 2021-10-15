@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Aux from '../components/Aux'
+import Aux0 from '../components/Aux0'
 import { Col, Row, Container, Input, Buttons, Form, FormGroup, Label} from 'reactstrap';
 
 import PrintLine from '../components/Layouts/PrintLine';
@@ -70,7 +70,7 @@ const CalcBuilder = () => {
   
   useEffect( ()=> initializeData(),[]);
   return (
-    <Aux>
+    <Aux0>
     <Container fluid>
       <Form>
         <FormGroup>
@@ -101,7 +101,7 @@ const CalcBuilder = () => {
         </FormGroup>
       </Form>
   </Container>      
-    </Aux>
+    </Aux0>
   )
 }
 
